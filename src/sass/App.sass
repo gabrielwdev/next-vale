@@ -1,7 +1,67 @@
 @use 'mixins'
 @use 'variables'
+
     
 body
-    display: flex
-    align-items: center
-    justify-content: center
+    background-color: variables.$bg-color
+    font-family: 'Poppins', sans-serif
+    @include mixins.container
+
+    .header
+
+        &-superior
+            @include mixins.flex
+            height: 140px
+        
+            .logo
+                padding-left: 6rem
+                width: 15%
+                height: 100%
+            
+            &-lista
+                @include mixins.flex
+                column-gap: 2.5rem
+
+                &-itens
+                    list-style: none
+                    @include mixins.centralizar
+                    
+                    &-ancora
+                        text-decoration: none
+                        display: flex
+                        align-items: center
+                        gap: 0.7rem
+                        color: variables.$secondary-color
+                    
+
+                    .icon
+                        width: 25px
+
+                    .informacoes
+                        font-style: italic
+                        font-size: 14px
+        
+        &-inferior
+            background-color: variables.$ilustrator-color
+            padding-left: 10rem
+            height: 4rem
+
+            &-list
+                @include mixins.flex
+                height: 100%
+                gap: 1rem
+
+                &-itens
+                    list-style: none
+                    @include mixins.centralizar
+                    padding: 0 .8rem
+                    
+                    
+                    &:hover
+                        border-bottom: 5px solid variables.$bg-color
+
+                    &-ancora
+                        text-decoration: none
+                        color: variables.$bg-color
+                    
+            
