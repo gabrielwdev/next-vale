@@ -1,8 +1,8 @@
 export default function Main() {
     return(
         <>
-            <main><h1>Soluções em Cabeamento Estruturado e Infra- <br /> Estrutura em TI</h1>
-            <input type="button" value="WhatsApp Agora" className="btn-cta" /></main>
+            <main className="main"><h1 className="main-titulo">Soluções em Cabeamento Estruturado e <br /> Infra-Estrutura em TI</h1>
+            <button className="btn"><a href="btn-cta">WhatsApp Agora</a></button></main>
         </>
     )
 }
