@@ -1,6 +1,11 @@
 @use 'mixins'
 @use 'variables'
 
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
 a
     color: #fff
     text-decoration: none
@@ -18,7 +23,7 @@ body
         
             .logo
                 padding-left: 6rem
-                width: 15%
+                width: 20%
                 height: 100%
             
             &-lista
@@ -90,7 +95,62 @@ body
             &-cta
                 font-size: 16px
                 font-weight: 300
+            
+        
+    .stn-solucoes
+        padding: 5rem
+        @include mixins.centralizar
+        flex-direction: column
+        gap: 4rem
 
+        &-title
+            text-align: center
+            font-size: 35px
+            color: variables.$ilustrator-color
+
+        .list-cards
+            @include mixins.centralizar
+            flex-wrap: wrap
+            gap: 1rem
+        
+            &-card
+                list-style: none
+                display: flex
+                align-items: center
+                flex-direction: column
+                height: 15rem
+                gap: 1rem
+                box-shadow: 4px 4px 12px variables.$primary-color
+                border-bottom: 4px solid variables.$ilustrator-color
+                border-radius: 12px
+                overflow: hidden
+            
+            .par
+                border-bottom: 4px solid variables.$secondary-color
+                
+                .img
+                    width: 101%
+            
+                .titulo
+                    color: variables.$secondary-color
+
+                .descricao
+                    text-align: center
+                    color: variables.$secondary-color
+                    font-size: 14px
+                    font-weight: 400
+                
+        .btn
+            padding: 1rem 2rem
+            background: linear-gradient(266deg, #1530A0, #959BA1)
+            border: none
+            border-radius: 2rem
+            color: variables.$bg-color
+            font-size: 16px
+            font-weight: 300
+                
+            
+                    
 
 
             
