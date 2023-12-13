@@ -1,10 +1,13 @@
+import img from './img/quem-somos.jpg'
+
+
 export default function Stn_quem_somos() {
   return (
     <>
-      <article>
-        <div>
-          <h2 className="subtitulo">Quem Somos</h2>
-          <p className="descricao">
+      <article className='stn-sobre'>
+        <div className='stn-sobre-container'>
+          <h2 className="stn-sobre-container-subtitulo">Quem Somos</h2>
+          <p className="stn-sobre-container-descricao">
             A NextVale IT Solutions – Empresa Especializada em Cabeamento
             Estruturado Metálico e Fibra Óptica. Uma empresa séria, com
             profissionais qualificados e certificados, atuando a mais de 19 anos
@@ -13,8 +16,8 @@ export default function Stn_quem_somos() {
             Eletrônica CFTV) Presente no Mercado desde 2004.
           </p>
         </div>
-        <aside>
-          <img src="" alt="Foto Infraestrutura de TI" />
+        <aside className='stn-sobre-aside'>
+          <img className='stn-sobre-aside-img' src={img} alt="Foto Infraestrutura de TI" />
         </aside>
       </article>
     </>

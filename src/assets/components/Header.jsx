@@ -3,8 +3,14 @@ import Maps from "./img/maps.svg"
 import Whatsapp from "./img/whatsapp.svg"
 import Telefone from "./img/telefone.svg"
 import Relogio from "./img/relogio.svg"
+import arrow from './img/arrow.png'
+
+import Modal from './Modal.jsx'
+import { useState } from "react"
 
 export default function Header() {
+
+    const [openModal, setOpenModal] = useState(false)
 
     return(
         <>
@@ -46,6 +52,13 @@ export default function Header() {
                     <li className="header-inferior-list-itens"><a className="header-inferior-list-itens-ancora" href="">Consultoria e Projetos</a></li>
                     <li className="header-inferior-list-itens"><a className="header-inferior-list-itens-ancora" href="">Contato</a></li>
                 </ul>
+                
+                <div className="hidden">
+                    <button id="arrow-open" onClick={() => setOpenModal(true)}><img src={arrow} width={'40px'} alt="" /></button>
+                    
+                    <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}/>
+                    
+                </div>
             </nav>
         </header>
         </>
