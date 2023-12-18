@@ -4,7 +4,7 @@ import img from './img/quem-somos.jpg'
 export default function Stn_quem_somos() {
   return (
     <>
-      <article className='stn-sobre'>
+      <article id='sobre' className='stn-sobre'>
         <div className='stn-sobre-container'>
           <h2 className="stn-sobre-container-subtitulo">Quem Somos</h2>
           <p className="stn-sobre-container-descricao">

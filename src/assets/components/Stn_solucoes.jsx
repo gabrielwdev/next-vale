@@ -10,18 +10,17 @@ import Wireless from "./img/rede-wireless.jpg";
 export default function Stn_solucoes() {
   return (
     <>
-      <section className="stn-solucoes">
+      <section id="solucoes" className="stn-solucoes">
         <h2 className="stn-solucoes-title">SOLUÇÕES OFERECIDAS:</h2>
         <ul className="list-cards">
-          <li className="list-cards-card"> 
+          <li className="list-cards-card">
             <img src={Datacenter} alt="" className="img" />
             <h3 className="titulo">Datacenter</h3>
             <p className="descricao">
               Montagem de infra-estrutura <br /> de alta complexidade.
             </p>
           </li>
-        
-        
+
           <li className="list-cards-card par">
             <img src={Controle} alt="" className="img" />
             <h3 className="titulo">Controle de Acesso</h3>
@@ -29,8 +28,7 @@ export default function Stn_solucoes() {
               Montagem de infra-estrutura <br /> de alta complexidade.
             </p>
           </li>
-        
-        
+
           <li className="list-cards-card">
             <img src={Wireless} alt="" className="img" />
             <h3 className="titulo">Rede Wireless 4G/5G</h3>
@@ -38,8 +36,7 @@ export default function Stn_solucoes() {
               Montagem de infra-estrutura <br /> de alta complexidade.
             </p>
           </li>
-        
-        
+
           <li className="list-cards-card par">
             <img src={Fibra} alt="" className="img" />
             <h3 className="titulo">Fibra Óptica</h3>
@@ -47,8 +44,7 @@ export default function Stn_solucoes() {
               Montagem de infra-estrutura <br /> de alta complexidade.
             </p>
           </li>
-        
-        
+
           <li className="list-cards-card">
             <img src={Cabeamento} alt="" className="img" />
             <h3 className="titulo">Cabeamento Estruturado</h3>
@@ -77,12 +73,9 @@ export default function Stn_solucoes() {
               Montagem de infra-estrutura <br /> de alta complexidade.
             </p>
           </li>
-        
-        
-
         </ul>
-        
-        <input type="button" className="btn" value="Entre em Contato Conosco" />
+
+        <a href=""><input type="button" className="btn" value="Entre em Contato Conosco" /></a>
       </section>
     </>
   );

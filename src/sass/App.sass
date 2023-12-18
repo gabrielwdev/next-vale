@@ -1,40 +1,33 @@
 @use 'mixins'
 @use 'variables'
 
-*
-    margin: 0
-    padding: 0
-    box-sizing: border-box
 
-a
-    color: #fff
-    text-decoration: none
     
 body
     background-color: variables.$bg-color
     font-family: 'Poppins', sans-serif
     @include mixins.container
 
-    .header
+    header
 
-        &-superior
+        .superior
             @include mixins.flex
             height: 140px
-            @include mixins.smartphone
+            @include mixins.tablet
                 @include mixins.centralizar
         
             .logo
                 padding-left: 6rem
                 width: 300px
                 height: 100%
-                @include mixins.smartphone
+                @include mixins.tablet
                     width: 200px
                     padding: 0
             
             &-lista
                 @include mixins.flex
                 column-gap: 2.5rem
-                @include mixins.smartphone
+                @include mixins.tablet
                     display: none
 
                 &-itens
@@ -42,24 +35,24 @@ body
                     @include mixins.centralizar
                     
                     &-ancora
+                        color: variables.$secondary-color
                         text-decoration: none
                         display: flex
                         align-items: center
                         gap: 0.7rem
-                        color: variables.$secondary-color
 
-                    .icon
-                        width: 25px
+                        &:hover
+                            color: variables.$ilustrator-color
 
-                    .informacoes
-                        font-style: italic
-                        font-size: 14px
+                        .informacoes
+                            font-style: italic
+                            font-size: 14px
         
-        &-inferior
+        .inferior
             background-color: variables.$ilustrator-color
             padding-left: 10rem
             height: 4rem
-            @include mixins.smartphone
+            @include mixins.tablet
                 height: 3rem
                 padding: 0
 
@@ -67,7 +60,7 @@ body
                 @include mixins.flex
                 height: 100%
                 gap: 1rem
-                @include mixins.smartphone
+                @include mixins.tablet
                     display: none
 
                 &-itens
@@ -86,7 +79,7 @@ body
 
             .hidden
                 display: none
-                @include mixins.smartphone
+                @include mixins.tablet
                     @include mixins.centralizar
                     flex-direction: column
 
@@ -146,7 +139,7 @@ body
                 .arrow-open:active ~ .hidden-block
                     display: flex
 
-    .main
+    main
         @include mixins.centralizar
         flex-direction: column
         background-size: 100%
@@ -157,7 +150,7 @@ body
         @include mixins.smartphone
             height: 25rem
 
-        &-titulo
+        .title
             font-weight: 400
             color: variables.$bg-color
             text-align: center
@@ -171,6 +164,7 @@ body
             border-radius: 2rem
             font-size: 20px
             font-weight: 300
+            cursor: pointer
             @include mixins.smartphone
                 font-size: 15px
                    
@@ -182,7 +176,7 @@ body
 
         &-title
             text-align: center
-            font-size: 45px
+            font-size: 35px
             color: variables.$ilustrator-color
             @include mixins.smartphone
                 font-size: 35px
@@ -203,6 +197,10 @@ body
                 border-bottom: 4px solid variables.$ilustrator-color
                 border-radius: 12px
                 overflow: hidden
+
+                &:hover
+                    transition: .5s
+                    box-shadow: 10px 10px 25px variables.$secondary-color
 
                 .img
                     width: 101%
@@ -229,15 +227,20 @@ body
             color: variables.$bg-color
             font-size: 20px
             font-weight: 300
+            cursor: pointer
             @include mixins.smartphone
                 font-size: 15px
+            
+                
                    
     .stn-sobre
-        padding: 5rem 0
+        padding: 5rem
+        gap: 6rem
         @include mixins.centralizar
-        gap: 3rem
+        @include mixins.tablet
+            gap: 0
 
-        @include mixins.smartphone
+        @include mixins.tablet
             flex-direction: column
             padding: 5rem 0
 
@@ -245,21 +248,21 @@ body
             display: flex
             flex-direction: column
             gap: 2rem
-            @include mixins.smartphone
+            @include mixins.tablet
                 align-items: center
 
             &-subtitulo
-                font-size: 45px
+                font-size: 35px
                 color: variables.$ilustrator-color
-                @include mixins.smartphone
+                @include mixins.tablet
                     text-align: center
                     font-size: 35px
                   
             &-descricao
                 color: variables.$secondary-color
-                font-size: 25px
-                width: 550px
-                @include mixins.smartphone
+                font-size: 22px
+                width: 450px
+                @include mixins.tablet
                     text-align: justify
                     width: 70%
                     font-size: 18px
@@ -268,11 +271,11 @@ body
         &-aside
             display: flex
             justify-content: end 
-            @include mixins.smartphone
+            @include mixins.tablet
                 display: none
 
             &-img
-                width: 95%
+                width: 85%
 
     .stn-mais-sobre
         background: linear-gradient(rgba(14, 33, 113, .9), rgba(14, 33, 113, 0.9)), url("../assets/components/img/quem-somos.jpg") no-repeat
@@ -335,29 +338,40 @@ body
         gap: 4rem
         flex-direction: column
         padding: 5rem 0
-        @include mixins.smartphone
+        
 
         &-title
             padding: 0 9rem
-            font-size: 45px
+            font-size: 35px
             color: variables.$ilustrator-color
             @include mixins.smartphone
-                font-size: 30px
+                font-size: 35px
+                padding: 0 5rem
+                text-align: center
         
         &-description
             padding: 0 9rem
             color: variables.$secondary-color
-            font-size: 25px
+            font-size: 22px
+            @include mixins.smartphone
+                font-size: 20px
+                padding: 0 4rem
+                text-align: justify
         
         div
-            background: linear-gradient(rgba(231, 231, 231, 0.8), rgba(184, 184, 184, 0.8)), url("../assets/components/img/cabos-3.jpg") no-repeat
+            background: linear-gradient(rgba(221, 221, 221, 0.9), rgba(235, 235, 235, 0.9)), url("../assets/components/img/cabos-3.jpg") no-repeat
             background-position: center
             background-size: 100%
             padding: 4rem
+            @include mixins.tablet
+                padding: 2rem 0
 
             .stn-cabeamento-list
                 @include mixins.centralizar
                 gap: 4rem
+                flex-wrap: wrap
+                @include mixins.tablet
+                    gap: 1rem
 
                 &-item
                     list-style: none
@@ -366,7 +380,156 @@ body
                     border-radius: 15px
                     background-color: red
                     overflow: hidden
+                    @include mixins.tablet
+                        width: 160px
+                        height: 160px
+                    
 
                     &-img
                         width: 101%
                         height: 101%
+
+    .stn-projetos
+        background-color: variables.$bg-color
+        @include mixins.centralizar
+        margin-bottom: 5rem
+        padding: 0 9rem
+        @include mixins.tablet
+            flex-direction: column
+            margin-bottom: 2rem
+        
+        @include mixins.smartphone
+            padding: 0 4rem
+
+        &-container
+            display: flex
+            justify-content: center
+            flex-direction: column
+            gap: 2rem
+
+            &-subtitulo
+                font-size: 35px
+                color: variables.$ilustrator-color
+                @include mixins.smartphone
+                    font-size: 35px
+                    text-align: center
+                
+            &-descricao
+                color: variables.$secondary-color
+                font-size: 22px
+                @include mixins.smartphone
+                    font-size: 20px
+
+                    text-align: justify
+            
+        &-lateral
+            @include mixins.centralizar
+
+            
+            
+            &-img
+                width: 100%
+                @include mixins.tablet
+                    width: 400px
+                    padding: 2rem 4rem
+
+
+    footer
+        border-top: 2px solid #cacaca
+        padding: 1rem 5rem
+        font-family: 'Roboto', sans-serif
+
+        div
+            @include mixins.centralizar
+            justify-content: space-between
+            @include mixins.tablet
+                flex-direction: column
+                gap: 3rem
+            
+            .info
+                flex-direction: column
+                align-items: stretch
+                gap: 2rem
+                margin-top: -20px
+                @include mixins.tablet
+                    display: none
+
+                &-img
+                    width: 150px
+                    
+                &-description
+                    width: 330px
+                    font-size: 15px
+                    color: #000
+                    font-weight: 500
+            .canais
+                flex-direction: column
+                align-items: baseline
+                gap: 1.5rem
+
+
+                &-link
+                    color: #000
+                    font-size: 25px
+                    font-weight: 600
+                    @include mixins.tablet
+                        font-size: 30px
+                    
+                    &:hover
+                        transition-duration: .5s
+                        color: variables.$ilustrator-color
+
+                    &-title
+                        font-size: 20px
+                        font-family: 'Poppins'
+                        margin-bottom: .8rem
+                    
+                &-container
+                    display: block
+
+                    &-link
+                        display: flex 
+                        gap: .8rem
+                        color: #000
+                        font-size: 15px
+                        
+                        @include mixins.tablet
+                            font-size: 14px                        
+                        
+
+                        &:hover
+                            transition-duration: .5s
+                            color: variables.$ilustrator-color
+
+                    ul
+                        margin-top: 1rem
+                        display: flex
+                        gap: 1rem
+                        
+                        
+                        li 
+                            a
+                                color: #000
+
+                                &:hover
+                                    transition: .5s
+                                    color: variables.$ilustrator-color
+                                    
+                                img
+                
+                .maps
+                        
+
+        .direitos-reservados
+            margin-top: 1.5rem
+            padding: 2rem 0 1rem 0
+            border-top: 1px solid #cacaca
+            font-size: 13px
+
+            div
+                display: flex
+                gap: 1.5rem
+
+                img
+                    width: 30px
+                
