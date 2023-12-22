@@ -24,7 +24,7 @@ export default function Footer() {
             <a
               className="canais-container-link"
               target="_blank"
-              href="https://www.figma.com/file/LD9R5ybejjSWguA1t5yfnW/PORTIF%C3%93LIO%3A-LP---SERVI%C3%87OS---%2302?type=design&node-id=222-2&mode=design&t=Z4PMk7LaSET9sNU2-0"
+              href="https://www.google.com/maps?ll=-23.30077,-45.968816&z=13&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=6339427328509434445"
             >
               <i>
                 <svg
