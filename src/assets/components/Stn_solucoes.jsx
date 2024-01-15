@@ -75,7 +75,7 @@ export default function Stn_solucoes() {
           </li>
         </ul>
 
-        <a href=""><input type="button" className="btn" value="Entre em Contato Conosco" /></a>
+        <a href="https://wa.me/5512981132013"><input type="button" className="btn" value="Entre em Contato Conosco" /></a>
       </section>
     </>
   );
