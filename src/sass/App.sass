@@ -13,20 +13,21 @@ body
         .superior
             @include mixins.flex
             height: 140px
+            padding: 0 8rem 0 9rem  
+            gap: 5%
             @include mixins.tablet
                 @include mixins.centralizar
         
             .logo
-                padding-left: 6rem
-                width: 300px
+                width: 15%
                 height: 100%
                 @include mixins.tablet
                     width: 200px
-                    padding: 0
             
             &-lista
                 @include mixins.flex
-                column-gap: 2.5rem
+                width: 100%
+                justify-content: space-between
                 @include mixins.tablet
                     display: none
 
@@ -66,7 +67,7 @@ body
             &-list
                 @include mixins.flex
                 height: 100%
-                gap: 1rem
+                gap: 2%
                 @include mixins.tablet
                     display: none
 
@@ -154,6 +155,7 @@ body
         height: 35rem
         background: linear-gradient(rgba(14, 33, 113, .8), rgba(14, 33, 113, .8)), url("../assets/components/img/destaque.jpg") no-repeat
         background-position: center
+        background-size: 100%
         row-gap: 3rem
         @include mixins.smartphone
             height: 25rem
@@ -192,7 +194,7 @@ body
         .list-cards
             @include mixins.centralizar
             flex-wrap: wrap
-            gap: 1rem
+            gap: 3rem
         
             &-card
                 list-style: none
@@ -208,7 +210,7 @@ body
 
                 &:hover
                     transition: .5s
-                    box-shadow: 10px 10px 25px variables.$secondary-color
+                    box-shadow: 10px 10px 25px variables.$ilustrator-color
 
                 .img
                     width: 101%
@@ -218,9 +220,10 @@ body
                     font-size: 19px
 
                 .descricao
+                    padding: 0 2rem
                     text-align: center
                     color: variables.$secondary-color
-                    font-size: 17px
+                    font-size: 15px
                     font-weight: 400
             
             .par
@@ -240,9 +243,10 @@ body
                 font-size: 15px
                             
     .stn-sobre
-        padding: 5rem
-        gap: 6rem
+        padding: 5rem 3rem 5rem 8rem
+        width: 100%
         @include mixins.centralizar
+        justify-content: space-between
         @include mixins.tablet
             gap: 0
 
@@ -251,6 +255,7 @@ body
             padding: 5rem 0
 
         &-container
+            text-align: justify
             display: flex
             flex-direction: column
             gap: 2rem
@@ -267,7 +272,7 @@ body
             &-descricao
                 color: variables.$secondary-color
                 font-size: 22px
-                width: 450px
+                width: 40rem
                 @include mixins.tablet
                     text-align: justify
                     width: 70%
@@ -276,7 +281,6 @@ body
 
         &-aside
             display: flex
-            justify-content: end 
             @include mixins.tablet
                 display: none
 
@@ -286,7 +290,7 @@ body
     .stn-mais-sobre
         background: linear-gradient(rgba(14, 33, 113, .9), rgba(14, 33, 113, 0.9)), url("../assets/components/img/quem-somos.jpg") no-repeat
         background-size: 100%
-        padding: 4rem
+        padding: 6rem
         @include mixins.smartphone
             background-size: 180%
         
@@ -307,11 +311,11 @@ body
 
     .stn-certificates
         background-color: variables.$primary-color
-        padding: 2rem 6rem 5rem 6rem
+        padding: 4rem 6rem 5rem 8rem
         display: flex
         justify-content: center
-        gap: 2rem
         flex-direction: column
+        gap: 2rem
         @include mixins.smartphone
             padding: 2rem
         &-title
@@ -323,7 +327,8 @@ body
 
         &-list
             @include mixins.centralizar
-            gap: 1rem
+            justify-content: space-between
+            padding-right: 2rem
             flex-wrap: wrap
             
 
@@ -368,13 +373,13 @@ body
             background: linear-gradient(rgba(221, 221, 221, 0.9), rgba(235, 235, 235, 0.9)), url("../assets/components/img/cabos-3.jpg") no-repeat
             background-position: center
             background-size: 100%
-            padding: 4rem
+            padding: 4rem 8rem
             @include mixins.tablet
                 padding: 2rem 0
 
             .stn-cabeamento-list
                 @include mixins.centralizar
-                gap: 4rem
+                justify-content: space-between
                 flex-wrap: wrap
                 @include mixins.tablet
                     gap: 1rem
@@ -399,7 +404,9 @@ body
         background-color: variables.$bg-color
         @include mixins.centralizar
         margin-bottom: 5rem
-        padding: 0 9rem
+        padding: 0 8rem
+        gap: 5rem
+        justify-content: space-between
         @include mixins.tablet
             flex-direction: column
             margin-bottom: 2rem
@@ -411,6 +418,7 @@ body
             display: flex
             justify-content: center
             flex-direction: column
+            
             gap: 2rem
 
             &-subtitulo
@@ -423,9 +431,11 @@ body
             &-descricao
                 color: variables.$secondary-color
                 font-size: 22px
+                text-align: justify
+                max-width: 40rem
+                
                 @include mixins.smartphone
                     font-size: 20px
-
                     text-align: justify
             
         &-lateral

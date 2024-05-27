@@ -25,7 +25,7 @@ export default function Stn_solucoes() {
             <img src={Controle} alt="" className="img" />
             <h3 className="titulo">Controle de Acesso</h3>
             <p className="descricao">
-              Montagem de infra-estrutura <br /> de alta complexidade.
+              Maior segurança e integridade. <br /> Soluções biométricas, Magnéticas, <br /> RFID e leitura de Íris.
             </p>
           </li>
 
@@ -33,7 +33,7 @@ export default function Stn_solucoes() {
             <img src={Wireless} alt="" className="img" />
             <h3 className="titulo">Rede Wireless 4G/5G</h3>
             <p className="descricao">
-              Montagem de infra-estrutura <br /> de alta complexidade.
+              Soluções indoor/outdoor e  <br /> Implantação de Wireless  <br /> (2.4Ghz/5Ghz).
             </p>
           </li>
 
@@ -41,7 +41,7 @@ export default function Stn_solucoes() {
             <img src={Fibra} alt="" className="img" />
             <h3 className="titulo">Fibra Óptica</h3>
             <p className="descricao">
-              Montagem de infra-estrutura <br /> de alta complexidade.
+              Soluções de cabeamento óptico <br /> de alto desempenho.
             </p>
           </li>
 
@@ -49,28 +49,28 @@ export default function Stn_solucoes() {
             <img src={Cabeamento} alt="" className="img" />
             <h3 className="titulo">Cabeamento Estruturado</h3>
             <p className="descricao">
-              Montagem de infra-estrutura <br /> de alta complexidade.
+              Soluções metálicas de acordo <br /> com seu ambiente sendo ele <br /> Comercial, Industrial e Datacenters.
             </p>
           </li>
           <li className="list-cards-card par">
             <img src={Cftv} alt="" className="img" />
             <h3 className="titulo">CFTV</h3>
             <p className="descricao">
-              Montagem de infra-estrutura <br /> de alta complexidade.
+              Imagens em alta resolução <br /> com tecnologia IP ou VHD.
             </p>
           </li>
           <li className="list-cards-card">
             <img src={Telefonia} alt="" className="img" />
             <h3 className="titulo">Telefonia</h3>
             <p className="descricao">
-              Montagem de infra-estrutura <br /> de alta complexidade.
+            Rede Analógica ou IP.
             </p>
           </li>
           <li className="list-cards-card par">
             <img src={Rede} alt="" className="img" />
             <h3 className="titulo">Certificação de Rede</h3>
             <p className="descricao">
-              Montagem de infra-estrutura <br /> de alta complexidade.
+              Infra-Estrutura Metálica/Óptica
             </p>
           </li>
         </ul>
