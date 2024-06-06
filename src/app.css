@@ -1,15 +1,16 @@
 body {
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
-  max-width: 100%;
+  max-width: 1900px;
   margin: 0 auto;
 }
 body header .superior {
   display: flex;
   flex-direction: row;
+  align-items: center;
   height: 140px;
-  padding: 0 6rem;
-  gap: 8rem;
+  padding: 0 8rem 0 8rem;
+  gap: 5%;
 }
 @media (max-width: 1000px) {
   body header .superior {
@@ -19,13 +20,11 @@ body header .superior {
   }
 }
 body header .superior .logo {
-  width: 15%;
-  height: 100%;
+  width: 18%;
 }
 @media (max-width: 1000px) {
   body header .superior .logo {
     width: 200px;
-    padding: 0;
   }
 }
 body header .superior-lista {
@@ -63,15 +62,15 @@ body header .superior-lista-itens .superior-lista-itens-ancora {
   gap: 0.7rem;
 }
 body header .superior-lista-itens .superior-lista-itens-ancora:hover {
-  color: #0E2171;
+  color: #0e2171;
 }
 body header .superior-lista-itens .superior-lista-itens-ancora .informacoes {
   font-style: italic;
   font-size: 14px;
 }
 body header .inferior {
-  background-color: #0E2171;
-  padding-left: 10rem;
+  background-color: #0e2171;
+  padding-left: 8rem;
   height: 4rem;
 }
 @media (max-width: 1000px) {
@@ -84,7 +83,7 @@ body header .inferior-list {
   display: flex;
   flex-direction: row;
   height: 100%;
-  gap: 1rem;
+  gap: 2%;
 }
 @media (max-width: 1000px) {
   body header .inferior-list {
@@ -161,7 +160,7 @@ body header .inferior .hidden-modal-lista-itens-ancora-icon {
   width: 17px;
 }
 body header .inferior .hidden-modal #arrow-close {
-  background: #0E2171;
+  background: #0e2171;
   border: none;
   margin-top: -42.8px;
 }
@@ -223,7 +222,7 @@ body .stn-solucoes {
 body .stn-solucoes-title {
   text-align: center;
   font-size: 35px;
-  color: #0E2171;
+  color: #0e2171;
 }
 @media (max-width: 600px) {
   body .stn-solucoes-title {
@@ -245,13 +244,13 @@ body .stn-solucoes .list-cards-card {
   height: 15rem;
   gap: 1rem;
   box-shadow: 2px 4px 12px #959BA1;
-  border-bottom: 4px solid #0E2171;
+  border-bottom: 4px solid #0e2171;
   border-radius: 12px;
   overflow: hidden;
 }
 body .stn-solucoes .list-cards-card:hover {
   transition: 0.5s;
-  box-shadow: 10px 10px 25px #959BA1;
+  box-shadow: 10px 10px 25px #0e2171;
 }
 body .stn-solucoes .list-cards-card .img {
   width: 101%;
@@ -317,7 +316,7 @@ body .stn-sobre-container {
 }
 body .stn-sobre-container-subtitulo {
   font-size: 35px;
-  color: #0E2171;
+  color: #0e2171;
 }
 @media (max-width: 1000px) {
   body .stn-sobre-container-subtitulo {
@@ -423,9 +422,9 @@ body .stn-cabeamento {
   padding: 5rem 0;
 }
 body .stn-cabeamento-title {
-  padding: 0 9rem;
+  padding: 0 8rem;
   font-size: 35px;
-  color: #0E2171;
+  color: #0e2171;
 }
 @media (max-width: 600px) {
   body .stn-cabeamento-title {
@@ -435,7 +434,7 @@ body .stn-cabeamento-title {
   }
 }
 body .stn-cabeamento-description {
-  padding: 0 9rem;
+  padding: 0 8rem;
   color: #494C4F;
   font-size: 22px;
 }
@@ -516,7 +515,7 @@ body .stn-projetos-container {
 }
 body .stn-projetos-container-subtitulo {
   font-size: 35px;
-  color: #0E2171;
+  color: #0e2171;
 }
 @media (max-width: 600px) {
   body .stn-projetos-container-subtitulo {
@@ -552,7 +551,7 @@ body .stn-projetos-lateral-img {
 }
 body footer {
   border-top: 2px solid #cacaca;
-  padding: 1rem 5rem;
+  padding: 1rem 8rem;
   font-family: "Roboto", sans-serif;
 }
 body footer div {
@@ -579,7 +578,7 @@ body footer div .info {
   }
 }
 body footer div .info-img {
-  width: 150px;
+  width: 12rem;
 }
 body footer div .info-description {
   width: 330px;
@@ -604,7 +603,7 @@ body footer div .canais-link {
 }
 body footer div .canais-link:hover {
   transition-duration: 0.5s;
-  color: #0E2171;
+  color: #0e2171;
 }
 body footer div .canais-link-title {
   font-size: 20px;
@@ -627,7 +626,7 @@ body footer div .canais-container-link {
 }
 body footer div .canais-container-link:hover {
   transition-duration: 0.5s;
-  color: #0E2171;
+  color: #0e2171;
 }
 body footer div .canais-container ul {
   margin-top: 1rem;
@@ -639,7 +638,7 @@ body footer div .canais-container ul li a {
 }
 body footer div .canais-container ul li a:hover {
   transition: 0.5s;
-  color: #0E2171;
+  color: #0e2171;
 }
 body footer .direitos-reservados {
   margin-top: 1.5rem;

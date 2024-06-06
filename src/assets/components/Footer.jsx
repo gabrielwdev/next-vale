@@ -1,4 +1,4 @@
-import Logo from "./img/nextvale-logo-footer.jpg";
+import Logo from "./img/logo.jpg";
 import Arrow from "./img/arrow-up.svg";
 
 export default function Footer() {
@@ -6,7 +6,7 @@ export default function Footer() {
     <footer id="contato">
       <div>
         <div className="info">
-          <img className="info-img" src={Logo} alt="Logo Next Vale" />
+          <img className="info-img" src={Logo} alt="Logo Atalho Info" />
           <p className="info-description">
             Soluções em Cabeamento Estruturado e Infra-Estrutura em TI
           </p>
@@ -18,9 +18,9 @@ export default function Footer() {
             className="canais-link"
           >
             <h2 className="canais-link-title">WHATSAPP</h2>
-            <div>
+            <div className="canais-link-container">
               <svg
-                className="canais-container-link"
+                className="whatsapp"
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="direitos-reservados">
-        <p>2023 © Todos os direitos reservados. NextVale</p>
+        <p>2023 © Todos os direitos reservados. Atalho Info</p>
         <div>
           <p>Voltar para o topo</p>{" "}
           <a href="#">

@@ -12,9 +12,9 @@ export default function Stn_certificados() {
         <section className="stn-certificates">
             <h2 className="stn-certificates-title">Certificados:</h2>
             <ul className="stn-certificates-list">
-                <li className="stn-certificates-list-item">
+                {/* <li className="stn-certificates-list-item">
                     <img className='certificados' src={Dtech} alt="dTech" />
-                </li>
+                </li> */}
                 <li className="stn-certificates-list-item">
                     <img className='certificados' src={Intelbras} alt="intelbras" />
                 </li>
@@ -24,9 +24,9 @@ export default function Stn_certificados() {
                 <li className="stn-certificates-list-item">
                     <img className='certificados' src={Fluke} alt="Fluke" />
                 </li>
-                <li className="stn-certificates-list-item">
+                {/* <li className="stn-certificates-list-item">
                     <img className='certificados' src={Fcp} alt="FCP" />
-                </li>
+                </li> */}
                 <li className="stn-certificates-list-item">
                     <img className='certificados' src={Furukawa} alt="FCP" />
                 </li>
