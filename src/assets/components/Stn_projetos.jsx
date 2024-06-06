@@ -7,7 +7,7 @@ export default function Stn_projetos() {
             <div className='stn-projetos-container'>
                 <h2 className="stn-projetos-container-subtitulo">CONSULTORIA E PROJETOS</h2>
                 <p className="stn-projetos-container-descricao">
-                    A Atalho Info possui profissionais capacitados para prestar Serviço de Consultoria
+                    A AtalhoInfo possui profissionais capacitados para prestar Serviço de Consultoria
                     e Projetos para a Rede de dados de sua Empresa.
                 </p>
             </div>

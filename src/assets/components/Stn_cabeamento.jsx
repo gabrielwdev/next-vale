@@ -12,7 +12,7 @@ export default function Stn_cabeamento() {
                 Implantação de Cabeamento Estruturado Certificado Metálico e Óptico de maneira 
                 eficiente dentro das normas técnicas, com profissionais QUALIFICADOS e 
                 CERTIFICADOS. Mão de Obra especializada. Atuamos com soluções em DATACENTERS, 
-                Soluções Industriais, Comerciais e na Área de Saúde. A NEXTVALE possui 
+                Soluções Industriais, Comerciais e na Área de Saúde. A AtalhoInfo possui 
                 equipamentos para Certificação de Redes e também para FUSÃO em Fibra Óptica.
             </p>
             <div>
