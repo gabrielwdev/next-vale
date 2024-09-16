@@ -1,4 +1,4 @@
-import Logo from "./img/logo.jpg"
+import Logo from "./img/nextvale-logo-footer.jpg"
 import Maps from "./img/maps.svg"
 import Whatsapp from "./img/whatsapp.svg"
 import Telefone from "./img/telefone.svg"

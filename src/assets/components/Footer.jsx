@@ -1,4 +1,4 @@
-import Logo from "./img/logo.jpg";
+import Logo from "./img/nextvale-logo-footer.jpg";
 import Arrow from "./img/arrow-up.svg";
 
 export default function Footer() {
@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="direitos-reservados">
-        <p>2023 © Todos os direitos reservados. Atalho Info</p>
+        <p>2023 © Todos os direitos reservados. Next Vale</p>
         <div>
           <p>Voltar para o topo</p>{" "}
           <a href="#">
